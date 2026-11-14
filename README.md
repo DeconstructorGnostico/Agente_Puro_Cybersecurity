@@ -86,3 +86,12 @@ fuente.txt           texto original del Sistema Perfeccionado (lo usan las prueb
 6. **La base de conocimiento es pequeña a propósito.** No es una base de vulnerabilidades: un CVE que no está en ella no se inventa.
 7. **Lo destructivo legítimo también se bloquea**: formatear un disco nuevo con `mkfs` o un `DROP DATABASE` planeado los tiene que aprobar un humano por fuera.
 8. El ejecutor, por defensa en profundidad, se niega a correr un `REPORTAR` cuyo texto contiene un patrón peligroso, aunque sea una pregunta (2 casos en el banco principal).
+
+## Comparación contra otros detectores
+
+En [`benchmark/`](benchmark/RESULTADOS.md) está la prueba cara a cara contra LLM Guard y el modelo ProtectAI deberta-v3-base-prompt-injection-v2, con los mismos casos para todos.
+
+- **Banco limpio held-out 2 (325 casos):** Agente Puro 77.6 % de detección con 0 % de falsos positivos (F1 0.874). LLM Guard PromptInjection 40.1 % / 21.8 % (F1 0.517). LLM Guard suite 83.9 % / 50.4 % (F1 0.767). deberta-v2 49.0 % / 25.6 % (F1 0.588).
+- **Datasets públicos externos de inyección de prompts (en inglés):** aquí gana ProtectAI. En deepset/prompt-injections, Agente Puro 12.2 % / 0 % contra 41.4 % / 1.0 % de deberta-v2. En safe-guard-prompt-injection, 24.5 % / 0.4 % contra 84.2 % / 0.1 %.
+
+En corto: la arquitectura (lista cerrada, token de un solo uso, auditoría y «no sé») no la tienen los otros, y el agente casi nunca bloquea trabajo legítimo. Su detector por patrones, en cambio, no generaliza bien a frases nuevas de inyección de prompts. Los detalles y las limitaciones están en `benchmark/RESULTADOS.md`.

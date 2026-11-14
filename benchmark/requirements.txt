@@ -1,0 +1,5 @@
+torch
+llm-guard==0.3.16
+transformers==4.51.3
+datasets
+matplotlib

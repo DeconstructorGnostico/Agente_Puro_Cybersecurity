@@ -1,0 +1,1043 @@
+{
+ "principal": {
+  "todas": {
+   "APC v1.1.0": {
+    "n": 354,
+    "maliciosos": 219,
+    "benignos": 135,
+    "tp": 219,
+    "fn": 0,
+    "fp": 0,
+    "tn": 135,
+    "deteccion": 1.0,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "latencia_ms": 2.3148054265503317
+   },
+   "LLM Guard PromptInjection": {
+    "n": 354,
+    "maliciosos": 219,
+    "benignos": 135,
+    "tp": 79,
+    "fn": 140,
+    "fp": 31,
+    "tn": 104,
+    "deteccion": 0.3607305936073059,
+    "tasa_fp": 0.22962962962962963,
+    "precision": 0.7181818181818181,
+    "f1": 0.48024316109422494,
+    "latencia_ms": 56.52850408195505
+   },
+   "LLM Guard suite": {
+    "n": 354,
+    "maliciosos": 219,
+    "benignos": 135,
+    "tp": 191,
+    "fn": 28,
+    "fp": 69,
+    "tn": 66,
+    "deteccion": 0.8721461187214612,
+    "tasa_fp": 0.5111111111111111,
+    "precision": 0.7346153846153847,
+    "f1": 0.7974947807933194,
+    "latencia_ms": 65.38470670681824
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 354,
+    "maliciosos": 219,
+    "benignos": 135,
+    "tp": 96,
+    "fn": 123,
+    "fp": 34,
+    "tn": 101,
+    "deteccion": 0.4383561643835616,
+    "tasa_fp": 0.2518518518518518,
+    "precision": 0.7384615384615385,
+    "f1": 0.5501432664756446,
+    "latencia_ms": 56.07143288672609
+   }
+  },
+  "apc_detalle": {
+   "maliciosos_indeterminado": 0,
+   "maliciosos_permitir": 0,
+   "benignos_indeterminado_friccion": 0
+  },
+  "solo_inyeccion_prompt": {
+   "APC v1.1.0": {
+    "n": 151,
+    "maliciosos": 16,
+    "benignos": 135,
+    "tp": 16,
+    "fn": 0,
+    "fp": 0,
+    "tn": 135,
+    "deteccion": 1.0,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "latencia_ms": 2.0092978008825404
+   },
+   "LLM Guard PromptInjection": {
+    "n": 151,
+    "maliciosos": 16,
+    "benignos": 135,
+    "tp": 15,
+    "fn": 1,
+    "fp": 31,
+    "tn": 104,
+    "deteccion": 0.9375,
+    "tasa_fp": 0.22962962962962963,
+    "precision": 0.32608695652173914,
+    "f1": 0.48387096774193544,
+    "latencia_ms": 58.003655967394366
+   },
+   "LLM Guard suite": {
+    "n": 151,
+    "maliciosos": 16,
+    "benignos": 135,
+    "tp": 16,
+    "fn": 0,
+    "fp": 69,
+    "tn": 66,
+    "deteccion": 1.0,
+    "tasa_fp": 0.5111111111111111,
+    "precision": 0.18823529411764706,
+    "f1": 0.31683168316831684,
+    "latencia_ms": 66.67389709990863
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 151,
+    "maliciosos": 16,
+    "benignos": 135,
+    "tp": 15,
+    "fn": 1,
+    "fp": 34,
+    "tn": 101,
+    "deteccion": 0.9375,
+    "tasa_fp": 0.2518518518518518,
+    "precision": 0.30612244897959184,
+    "f1": 0.46153846153846156,
+    "latencia_ms": 57.477703795032824
+   }
+  },
+  "sin_inyeccion_prompt": {
+   "APC v1.1.0": {
+    "n": 338,
+    "maliciosos": 203,
+    "benignos": 135,
+    "tp": 203,
+    "fn": 0,
+    "fp": 0,
+    "tn": 135,
+    "deteccion": 1.0,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "latencia_ms": 2.282112435024086
+   },
+   "LLM Guard PromptInjection": {
+    "n": 338,
+    "maliciosos": 203,
+    "benignos": 135,
+    "tp": 64,
+    "fn": 139,
+    "fp": 31,
+    "tn": 104,
+    "deteccion": 0.31527093596059114,
+    "tasa_fp": 0.22962962962962963,
+    "precision": 0.6736842105263158,
+    "f1": 0.4295302013422819,
+    "latencia_ms": 53.60136910360796
+   },
+   "LLM Guard suite": {
+    "n": 338,
+    "maliciosos": 203,
+    "benignos": 135,
+    "tp": 175,
+    "fn": 28,
+    "fp": 69,
+    "tn": 66,
+    "deteccion": 0.8620689655172413,
+    "tasa_fp": 0.5111111111111111,
+    "precision": 0.7172131147540983,
+    "f1": 0.7829977628635346,
+    "latencia_ms": 62.06060812777403
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 338,
+    "maliciosos": 203,
+    "benignos": 135,
+    "tp": 81,
+    "fn": 122,
+    "fp": 34,
+    "tn": 101,
+    "deteccion": 0.39901477832512317,
+    "tasa_fp": 0.2518518518518518,
+    "precision": 0.7043478260869566,
+    "f1": 0.5094339622641509,
+    "latencia_ms": 53.13851236059715
+   }
+  },
+  "por_categoria": {
+   "CADENA_ATAQUE": {
+    "APC v1.1.0": 14,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 14,
+    "ProtectAI deberta-v2 (0.5)": 7
+   },
+   "COMANDO_PELIGROSO": {
+    "APC v1.1.0": 26,
+    "LLM Guard PromptInjection": 3,
+    "LLM Guard suite": 14,
+    "ProtectAI deberta-v2 (0.5)": 4
+   },
+   "ESCALADA_PRIVILEGIOS": {
+    "APC v1.1.0": 19,
+    "LLM Guard PromptInjection": 4,
+    "LLM Guard suite": 14,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "EXFILTRACION": {
+    "APC v1.1.0": 18,
+    "LLM Guard PromptInjection": 4,
+    "LLM Guard suite": 18,
+    "ProtectAI deberta-v2 (0.5)": 4
+   },
+   "EXPLOIT_CVE": {
+    "APC v1.1.0": 13,
+    "LLM Guard PromptInjection": 7,
+    "LLM Guard suite": 10,
+    "ProtectAI deberta-v2 (0.5)": 9
+   },
+   "INYECCION_COMANDOS": {
+    "APC v1.1.0": 15,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 15,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "INYECCION_PROMPT": {
+    "APC v1.1.0": 16,
+    "LLM Guard PromptInjection": 15,
+    "LLM Guard suite": 16,
+    "ProtectAI deberta-v2 (0.5)": 15
+   },
+   "INYECCION_SQL": {
+    "APC v1.1.0": 16,
+    "LLM Guard PromptInjection": 11,
+    "LLM Guard suite": 16,
+    "ProtectAI deberta-v2 (0.5)": 13
+   },
+   "PATH_TRAVERSAL": {
+    "APC v1.1.0": 15,
+    "LLM Guard PromptInjection": 3,
+    "LLM Guard suite": 14,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "PERSISTENCIA": {
+    "APC v1.1.0": 17,
+    "LLM Guard PromptInjection": 7,
+    "LLM Guard suite": 17,
+    "ProtectAI deberta-v2 (0.5)": 11
+   },
+   "ROBO_CREDENCIALES": {
+    "APC v1.1.0": 19,
+    "LLM Guard PromptInjection": 5,
+    "LLM Guard suite": 17,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "SHELL_INVERSA": {
+    "APC v1.1.0": 14,
+    "LLM Guard PromptInjection": 2,
+    "LLM Guard suite": 9,
+    "ProtectAI deberta-v2 (0.5)": 3
+   },
+   "SSRF": {
+    "APC v1.1.0": 17,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 17,
+    "ProtectAI deberta-v2 (0.5)": 6
+   }
+  },
+  "llmguard_por_escaner": {
+   "PromptInjection": {
+    "maliciosos_marcados": 79,
+    "benignos_marcados": 31
+   },
+   "Secrets": {
+    "maliciosos_marcados": 1,
+    "benignos_marcados": 0
+   },
+   "InvisibleText": {
+    "maliciosos_marcados": 7,
+    "benignos_marcados": 0
+   },
+   "BanCode": {
+    "maliciosos_marcados": 174,
+    "benignos_marcados": 56
+   }
+  }
+ },
+ "heldout": {
+  "todas": {
+   "APC v1.1.0": {
+    "n": 316,
+    "maliciosos": 187,
+    "benignos": 129,
+    "tp": 182,
+    "fn": 5,
+    "fp": 0,
+    "tn": 129,
+    "deteccion": 0.9732620320855615,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.986449864498645,
+    "latencia_ms": 2.4338135035462454
+   },
+   "LLM Guard PromptInjection": {
+    "n": 316,
+    "maliciosos": 187,
+    "benignos": 129,
+    "tp": 79,
+    "fn": 108,
+    "fp": 44,
+    "tn": 85,
+    "deteccion": 0.42245989304812837,
+    "tasa_fp": 0.34108527131782945,
+    "precision": 0.6422764227642277,
+    "f1": 0.5096774193548387,
+    "latencia_ms": 60.86116292706582
+   },
+   "LLM Guard suite": {
+    "n": 316,
+    "maliciosos": 187,
+    "benignos": 129,
+    "tp": 159,
+    "fn": 28,
+    "fp": 75,
+    "tn": 54,
+    "deteccion": 0.8502673796791443,
+    "tasa_fp": 0.5813953488372093,
+    "precision": 0.6794871794871795,
+    "f1": 0.7553444180522565,
+    "latencia_ms": 70.18799258551127
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 316,
+    "maliciosos": 187,
+    "benignos": 129,
+    "tp": 92,
+    "fn": 95,
+    "fp": 46,
+    "tn": 83,
+    "deteccion": 0.4919786096256685,
+    "tasa_fp": 0.35658914728682173,
+    "precision": 0.6666666666666666,
+    "f1": 0.5661538461538461,
+    "latencia_ms": 60.44070015131287
+   }
+  },
+  "apc_detalle": {
+   "maliciosos_indeterminado": 5,
+   "maliciosos_permitir": 0,
+   "benignos_indeterminado_friccion": 0
+  },
+  "solo_inyeccion_prompt": {
+   "APC v1.1.0": {
+    "n": 141,
+    "maliciosos": 12,
+    "benignos": 129,
+    "tp": 12,
+    "fn": 0,
+    "fp": 0,
+    "tn": 129,
+    "deteccion": 1.0,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 1.0,
+    "latencia_ms": 2.2654866875877526
+   },
+   "LLM Guard PromptInjection": {
+    "n": 141,
+    "maliciosos": 12,
+    "benignos": 129,
+    "tp": 12,
+    "fn": 0,
+    "fp": 44,
+    "tn": 85,
+    "deteccion": 1.0,
+    "tasa_fp": 0.34108527131782945,
+    "precision": 0.21428571428571427,
+    "f1": 0.35294117647058826,
+    "latencia_ms": 64.01579054600909
+   },
+   "LLM Guard suite": {
+    "n": 141,
+    "maliciosos": 12,
+    "benignos": 129,
+    "tp": 12,
+    "fn": 0,
+    "fp": 75,
+    "tn": 54,
+    "deteccion": 1.0,
+    "tasa_fp": 0.5813953488372093,
+    "precision": 0.13793103448275862,
+    "f1": 0.2424242424242424,
+    "latencia_ms": 73.72183790793709
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 141,
+    "maliciosos": 12,
+    "benignos": 129,
+    "tp": 12,
+    "fn": 0,
+    "fp": 46,
+    "tn": 83,
+    "deteccion": 1.0,
+    "tasa_fp": 0.35658914728682173,
+    "precision": 0.20689655172413793,
+    "f1": 0.34285714285714286,
+    "latencia_ms": 63.67735200642496
+   }
+  },
+  "sin_inyeccion_prompt": {
+   "APC v1.1.0": {
+    "n": 304,
+    "maliciosos": 175,
+    "benignos": 129,
+    "tp": 170,
+    "fn": 5,
+    "fp": 0,
+    "tn": 129,
+    "deteccion": 0.9714285714285714,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.9855072463768115,
+    "latencia_ms": 2.3768483458154246
+   },
+   "LLM Guard PromptInjection": {
+    "n": 304,
+    "maliciosos": 175,
+    "benignos": 129,
+    "tp": 67,
+    "fn": 108,
+    "fp": 44,
+    "tn": 85,
+    "deteccion": 0.38285714285714284,
+    "tasa_fp": 0.34108527131782945,
+    "precision": 0.6036036036036037,
+    "f1": 0.4685314685314686,
+    "latencia_ms": 57.27457973348225
+   },
+   "LLM Guard suite": {
+    "n": 304,
+    "maliciosos": 175,
+    "benignos": 129,
+    "tp": 147,
+    "fn": 28,
+    "fp": 75,
+    "tn": 54,
+    "deteccion": 0.84,
+    "tasa_fp": 0.5813953488372093,
+    "precision": 0.6621621621621622,
+    "f1": 0.7405541561712846,
+    "latencia_ms": 66.1238453980523
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 304,
+    "maliciosos": 175,
+    "benignos": 129,
+    "tp": 80,
+    "fn": 95,
+    "fp": 46,
+    "tn": 83,
+    "deteccion": 0.45714285714285713,
+    "tasa_fp": 0.35658914728682173,
+    "precision": 0.6349206349206349,
+    "f1": 0.5315614617940199,
+    "latencia_ms": 56.81299357839682
+   }
+  },
+  "por_categoria": {
+   "CADENA_ATAQUE": {
+    "APC v1.1.0": 10,
+    "LLM Guard PromptInjection": 7,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 7
+   },
+   "COMANDO_PELIGROSO": {
+    "APC v1.1.0": 25,
+    "LLM Guard PromptInjection": 2,
+    "LLM Guard suite": 11,
+    "ProtectAI deberta-v2 (0.5)": 3
+   },
+   "ESCALADA_PRIVILEGIOS": {
+    "APC v1.1.0": 16,
+    "LLM Guard PromptInjection": 8,
+    "LLM Guard suite": 16,
+    "ProtectAI deberta-v2 (0.5)": 9
+   },
+   "EXFILTRACION": {
+    "APC v1.1.0": 17,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 14,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "EXPLOIT_CVE": {
+    "APC v1.1.0": 10,
+    "LLM Guard PromptInjection": 5,
+    "LLM Guard suite": 7,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "INYECCION_COMANDOS": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 5,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 7
+   },
+   "INYECCION_PROMPT": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 12,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 12
+   },
+   "INYECCION_SQL": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 10
+   },
+   "PATH_TRAVERSAL": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "PERSISTENCIA": {
+    "APC v1.1.0": 16,
+    "LLM Guard PromptInjection": 9,
+    "LLM Guard suite": 16,
+    "ProtectAI deberta-v2 (0.5)": 10
+   },
+   "ROBO_CREDENCIALES": {
+    "APC v1.1.0": 16,
+    "LLM Guard PromptInjection": 4,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 4
+   },
+   "SHELL_INVERSA": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 3,
+    "LLM Guard suite": 10,
+    "ProtectAI deberta-v2 (0.5)": 4
+   },
+   "SSRF": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 13,
+    "ProtectAI deberta-v2 (0.5)": 8
+   }
+  },
+  "llmguard_por_escaner": {
+   "PromptInjection": {
+    "maliciosos_marcados": 79,
+    "benignos_marcados": 44
+   },
+   "Secrets": {
+    "maliciosos_marcados": 3,
+    "benignos_marcados": 0
+   },
+   "InvisibleText": {
+    "maliciosos_marcados": 3,
+    "benignos_marcados": 0
+   },
+   "BanCode": {
+    "maliciosos_marcados": 138,
+    "benignos_marcados": 44
+   }
+  }
+ },
+ "heldout2": {
+  "todas": {
+   "APC v1.1.0": {
+    "n": 325,
+    "maliciosos": 192,
+    "benignos": 133,
+    "tp": 149,
+    "fn": 43,
+    "fp": 0,
+    "tn": 133,
+    "deteccion": 0.7760416666666666,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.873900293255132,
+    "latencia_ms": 2.2724657569779083
+   },
+   "LLM Guard PromptInjection": {
+    "n": 325,
+    "maliciosos": 192,
+    "benignos": 133,
+    "tp": 77,
+    "fn": 115,
+    "fp": 29,
+    "tn": 104,
+    "deteccion": 0.4010416666666667,
+    "tasa_fp": 0.21804511278195488,
+    "precision": 0.7264150943396226,
+    "f1": 0.5167785234899328,
+    "latencia_ms": 55.73314604613608
+   },
+   "LLM Guard suite": {
+    "n": 325,
+    "maliciosos": 192,
+    "benignos": 133,
+    "tp": 161,
+    "fn": 31,
+    "fp": 67,
+    "tn": 66,
+    "deteccion": 0.8385416666666666,
+    "tasa_fp": 0.5037593984962406,
+    "precision": 0.706140350877193,
+    "f1": 0.7666666666666666,
+    "latencia_ms": 64.37337921618914
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 325,
+    "maliciosos": 192,
+    "benignos": 133,
+    "tp": 94,
+    "fn": 98,
+    "fp": 34,
+    "tn": 99,
+    "deteccion": 0.4895833333333333,
+    "tasa_fp": 0.2556390977443609,
+    "precision": 0.734375,
+    "f1": 0.5875,
+    "latencia_ms": 58.34880425773848
+   }
+  },
+  "apc_detalle": {
+   "maliciosos_indeterminado": 37,
+   "maliciosos_permitir": 6,
+   "benignos_indeterminado_friccion": 2
+  },
+  "solo_inyeccion_prompt": {
+   "APC v1.1.0": {
+    "n": 145,
+    "maliciosos": 12,
+    "benignos": 133,
+    "tp": 11,
+    "fn": 1,
+    "fp": 0,
+    "tn": 133,
+    "deteccion": 0.9166666666666666,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.9565217391304348,
+    "latencia_ms": 1.9857055858853434
+   },
+   "LLM Guard PromptInjection": {
+    "n": 145,
+    "maliciosos": 12,
+    "benignos": 133,
+    "tp": 11,
+    "fn": 1,
+    "fp": 29,
+    "tn": 104,
+    "deteccion": 0.9166666666666666,
+    "tasa_fp": 0.21804511278195488,
+    "precision": 0.275,
+    "f1": 0.4230769230769231,
+    "latencia_ms": 58.47879891707321
+   },
+   "LLM Guard suite": {
+    "n": 145,
+    "maliciosos": 12,
+    "benignos": 133,
+    "tp": 12,
+    "fn": 0,
+    "fp": 67,
+    "tn": 66,
+    "deteccion": 1.0,
+    "tasa_fp": 0.5037593984962406,
+    "precision": 0.1518987341772152,
+    "f1": 0.26373626373626374,
+    "latencia_ms": 67.10487332411817
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 145,
+    "maliciosos": 12,
+    "benignos": 133,
+    "tp": 11,
+    "fn": 1,
+    "fp": 34,
+    "tn": 99,
+    "deteccion": 0.9166666666666666,
+    "tasa_fp": 0.2556390977443609,
+    "precision": 0.24444444444444444,
+    "f1": 0.3859649122807018,
+    "latencia_ms": 64.77530803441086
+   }
+  },
+  "sin_inyeccion_prompt": {
+   "APC v1.1.0": {
+    "n": 313,
+    "maliciosos": 180,
+    "benignos": 133,
+    "tp": 138,
+    "fn": 42,
+    "fp": 0,
+    "tn": 133,
+    "deteccion": 0.7666666666666667,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.8679245283018869,
+    "latencia_ms": 2.236348837151002
+   },
+   "LLM Guard PromptInjection": {
+    "n": 313,
+    "maliciosos": 180,
+    "benignos": 133,
+    "tp": 66,
+    "fn": 114,
+    "fp": 29,
+    "tn": 104,
+    "deteccion": 0.36666666666666664,
+    "tasa_fp": 0.21804511278195488,
+    "precision": 0.6947368421052632,
+    "f1": 0.48,
+    "latencia_ms": 52.63665371247903
+   },
+   "LLM Guard suite": {
+    "n": 313,
+    "maliciosos": 180,
+    "benignos": 133,
+    "tp": 149,
+    "fn": 31,
+    "fp": 67,
+    "tn": 66,
+    "deteccion": 0.8277777777777777,
+    "tasa_fp": 0.5037593984962406,
+    "precision": 0.6898148148148148,
+    "f1": 0.7525252525252525,
+    "latencia_ms": 60.874014815665966
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 313,
+    "maliciosos": 180,
+    "benignos": 133,
+    "tp": 83,
+    "fn": 97,
+    "fp": 34,
+    "tn": 99,
+    "deteccion": 0.46111111111111114,
+    "tasa_fp": 0.2556390977443609,
+    "precision": 0.7094017094017094,
+    "f1": 0.5589225589225589,
+    "latencia_ms": 55.37616925805207
+   }
+  },
+  "por_categoria": {
+   "CADENA_ATAQUE": {
+    "APC v1.1.0": 11,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 8
+   },
+   "COMANDO_PELIGROSO": {
+    "APC v1.1.0": 14,
+    "LLM Guard PromptInjection": 3,
+    "LLM Guard suite": 13,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "ESCALADA_PRIVILEGIOS": {
+    "APC v1.1.0": 11,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 10,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "EXFILTRACION": {
+    "APC v1.1.0": 14,
+    "LLM Guard PromptInjection": 6,
+    "LLM Guard suite": 15,
+    "ProtectAI deberta-v2 (0.5)": 6
+   },
+   "EXPLOIT_CVE": {
+    "APC v1.1.0": 9,
+    "LLM Guard PromptInjection": 5,
+    "LLM Guard suite": 10,
+    "ProtectAI deberta-v2 (0.5)": 9
+   },
+   "INYECCION_COMANDOS": {
+    "APC v1.1.0": 13,
+    "LLM Guard PromptInjection": 5,
+    "LLM Guard suite": 15,
+    "ProtectAI deberta-v2 (0.5)": 8
+   },
+   "INYECCION_PROMPT": {
+    "APC v1.1.0": 11,
+    "LLM Guard PromptInjection": 11,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 11
+   },
+   "INYECCION_SQL": {
+    "APC v1.1.0": 14,
+    "LLM Guard PromptInjection": 9,
+    "LLM Guard suite": 15,
+    "ProtectAI deberta-v2 (0.5)": 9
+   },
+   "PATH_TRAVERSAL": {
+    "APC v1.1.0": 12,
+    "LLM Guard PromptInjection": 3,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 7
+   },
+   "PERSISTENCIA": {
+    "APC v1.1.0": 11,
+    "LLM Guard PromptInjection": 8,
+    "LLM Guard suite": 14,
+    "ProtectAI deberta-v2 (0.5)": 8
+   },
+   "ROBO_CREDENCIALES": {
+    "APC v1.1.0": 11,
+    "LLM Guard PromptInjection": 3,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 4
+   },
+   "SHELL_INVERSA": {
+    "APC v1.1.0": 7,
+    "LLM Guard PromptInjection": 4,
+    "LLM Guard suite": 9,
+    "ProtectAI deberta-v2 (0.5)": 4
+   },
+   "SSRF": {
+    "APC v1.1.0": 11,
+    "LLM Guard PromptInjection": 8,
+    "LLM Guard suite": 12,
+    "ProtectAI deberta-v2 (0.5)": 8
+   }
+  },
+  "llmguard_por_escaner": {
+   "PromptInjection": {
+    "maliciosos_marcados": 77,
+    "benignos_marcados": 29
+   },
+   "Secrets": {
+    "maliciosos_marcados": 10,
+    "benignos_marcados": 0
+   },
+   "InvisibleText": {
+    "maliciosos_marcados": 5,
+    "benignos_marcados": 0
+   },
+   "BanCode": {
+    "maliciosos_marcados": 144,
+    "benignos_marcados": 48
+   }
+  }
+ },
+ "ext_deepset": {
+  "todas": {
+   "APC v1.1.0": {
+    "n": 662,
+    "maliciosos": 263,
+    "benignos": 399,
+    "tp": 32,
+    "fn": 231,
+    "fp": 0,
+    "tn": 399,
+    "deteccion": 0.12167300380228137,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.2169491525423729,
+    "latencia_ms": 2.787840280801781
+   },
+   "LLM Guard PromptInjection": {
+    "n": 662,
+    "maliciosos": 263,
+    "benignos": 399,
+    "tp": 101,
+    "fn": 162,
+    "fp": 3,
+    "tn": 396,
+    "deteccion": 0.3840304182509506,
+    "tasa_fp": 0.007518796992481203,
+    "precision": 0.9711538461538461,
+    "f1": 0.5504087193460491,
+    "latencia_ms": 51.739897376041206
+   },
+   "LLM Guard suite": {
+    "n": 662,
+    "maliciosos": 263,
+    "benignos": 399,
+    "tp": 142,
+    "fn": 121,
+    "fp": 53,
+    "tn": 346,
+    "deteccion": 0.5399239543726235,
+    "tasa_fp": 0.13283208020050125,
+    "precision": 0.7282051282051282,
+    "f1": 0.6200873362445414,
+    "latencia_ms": 60.18345656933905
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 662,
+    "maliciosos": 263,
+    "benignos": 399,
+    "tp": 109,
+    "fn": 154,
+    "fp": 4,
+    "tn": 395,
+    "deteccion": 0.4144486692015209,
+    "tasa_fp": 0.010025062656641603,
+    "precision": 0.9646017699115044,
+    "f1": 0.5797872340425532,
+    "latencia_ms": 50.8695072765702
+   },
+   "APC (texto como documento)": {
+    "n": 662,
+    "maliciosos": 263,
+    "benignos": 399,
+    "tp": 38,
+    "fn": 225,
+    "fp": 0,
+    "tn": 399,
+    "deteccion": 0.1444866920152091,
+    "tasa_fp": 0.0,
+    "precision": 1.0,
+    "f1": 0.25249169435215946,
+    "latencia_ms": 2.6023661710694364
+   }
+  },
+  "apc_detalle": {
+   "maliciosos_indeterminado": 102,
+   "maliciosos_permitir": 129,
+   "benignos_indeterminado_friccion": 115
+  },
+  "apc_doc_detalle": {
+   "maliciosos_indeterminado": 3,
+   "maliciosos_permitir": 222,
+   "benignos_indeterminado_friccion": 2
+  },
+  "llmguard_por_escaner": {
+   "PromptInjection": {
+    "maliciosos_marcados": 101,
+    "benignos_marcados": 3
+   },
+   "Secrets": {
+    "maliciosos_marcados": 0,
+    "benignos_marcados": 0
+   },
+   "InvisibleText": {
+    "maliciosos_marcados": 1,
+    "benignos_marcados": 2
+   },
+   "BanCode": {
+    "maliciosos_marcados": 63,
+    "benignos_marcados": 48
+   }
+  }
+ },
+ "ext_safeguard": {
+  "todas": {
+   "APC v1.1.0": {
+    "n": 2060,
+    "maliciosos": 650,
+    "benignos": 1410,
+    "tp": 159,
+    "fn": 491,
+    "fp": 6,
+    "tn": 1404,
+    "deteccion": 0.24461538461538462,
+    "tasa_fp": 0.00425531914893617,
+    "precision": 0.9636363636363636,
+    "f1": 0.3901840490797546,
+    "latencia_ms": 6.474578151865343
+   },
+   "LLM Guard PromptInjection": {
+    "n": 2060,
+    "maliciosos": 650,
+    "benignos": 1410,
+    "tp": 524,
+    "fn": 126,
+    "fp": 2,
+    "tn": 1408,
+    "deteccion": 0.8061538461538461,
+    "tasa_fp": 0.0014184397163120568,
+    "precision": 0.9961977186311787,
+    "f1": 0.8911564625850339,
+    "latencia_ms": 73.8412521569806
+   },
+   "LLM Guard suite": {
+    "n": 2060,
+    "maliciosos": 650,
+    "benignos": 1410,
+    "tp": 528,
+    "fn": 122,
+    "fp": 184,
+    "tn": 1226,
+    "deteccion": 0.8123076923076923,
+    "tasa_fp": 0.13049645390070921,
+    "precision": 0.7415730337078652,
+    "f1": 0.775330396475771,
+    "latencia_ms": 84.97267477543521
+   },
+   "ProtectAI deberta-v2 (0.5)": {
+    "n": 2060,
+    "maliciosos": 650,
+    "benignos": 1410,
+    "tp": 547,
+    "fn": 103,
+    "fp": 2,
+    "tn": 1408,
+    "deteccion": 0.8415384615384616,
+    "tasa_fp": 0.0014184397163120568,
+    "precision": 0.9963570127504554,
+    "f1": 0.9124270225187656,
+    "latencia_ms": 72.38526324669772
+   },
+   "APC (texto como documento)": {
+    "n": 2060,
+    "maliciosos": 650,
+    "benignos": 1410,
+    "tp": 162,
+    "fn": 488,
+    "fp": 4,
+    "tn": 1406,
+    "deteccion": 0.24923076923076923,
+    "tasa_fp": 0.0028368794326241137,
+    "precision": 0.9759036144578314,
+    "f1": 0.39705882352941174,
+    "latencia_ms": 7.118007931202759
+   }
+  },
+  "apc_detalle": {
+   "maliciosos_indeterminado": 293,
+   "maliciosos_permitir": 198,
+   "benignos_indeterminado_friccion": 544
+  },
+  "apc_doc_detalle": {
+   "maliciosos_indeterminado": 7,
+   "maliciosos_permitir": 481,
+   "benignos_indeterminado_friccion": 75
+  },
+  "llmguard_por_escaner": {
+   "PromptInjection": {
+    "maliciosos_marcados": 524,
+    "benignos_marcados": 2
+   },
+   "Secrets": {
+    "maliciosos_marcados": 1,
+    "benignos_marcados": 0
+   },
+   "InvisibleText": {
+    "maliciosos_marcados": 0,
+    "benignos_marcados": 0
+   },
+   "BanCode": {
+    "maliciosos_marcados": 7,
+    "benignos_marcados": 183
+   }
+  }
+ }
+}
